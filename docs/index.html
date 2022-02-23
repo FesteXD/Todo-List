@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header-content">
+        <h1>Todo list</h1>
+      </div>
+    </header>
+    <main>
+      <nav id="nav">
+        <button id="home" class="nav-button active-button">Home</button>
+        <button id="today" class="nav-button">Today</button>
+        <button id="this-week" class="nav-button">This week</button>
+        <button id="archive" class="nav-button">Archive</button>
+        <div id="projects">
+          <h2>Projects</h2>
+          <div id="display-projects"></div>
+          <button id="add-project-button">Add Project</button>
+          <div id="submit-project-div">
+            <input id="input-project-field" />
+            <div id="add-project-buttons">
+              <button id="add-project-button-add">Add</button
+                ><button id="add-project-button-cancel">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="edit-task-form">
+            <form id="edit-submit-form" novalidate>
+              <div id="form-div">
+                <label for="edit-input-name" id="edit-label-task" >Name : </label>
+                <input id="edit-input-name" class="edit-input-task" required />
+              </div>
+              <div id="form-div">
+                <label for="edit-input-description" id="edit-label-task"
+                  >Description :
+                </label>
+                <input id="edit-input-description" class="edit-input-task" required />
+              </div>
+              <div id="form-div">
+                <label for="edit-input-priority" id="edit-label-task">Priority : </label>
+                <select id="edit-input-priority" class="edit-input-task" required>
+                  <option>Low</option>
+                  <option>Normal</option>
+                  <option>High</option>
+                </select>
+              </div>
+              <div id="form-div">
+                <label for="edit-input-date" id="edit-label-task">Date : </label>
+                <input
+                  id="edit-input-date"
+                  type="datetime-local"
+                  class="edit-input-task"
+                  required
+                />
+              </div>
+              <div id="form-div">
+                <label for="input-project" id="edit-label-task">Project : </label>
+                <select
+                  id="edit-input-project"
+                  type="search"
+                  class="edit-input-task"
+                  required
+                ></select>
+              </div>
+              <div id="edit-task-buttons">
+                <button type="button" id="edit-task-button-submit">Submit</button>
+                <button type="button" id="edit-task-button-cancel">Cancel</button>
+              </div>
+            </form>
+          </div> 
+        <!-- edit (hidden) task form -->
+      <div id="project-preview">
+        <h2 id="preview-headline">Home</h2>
+        <div id="display-tasks"></div>
+        <button id="add-task-button">Add Task</button>
+        <div id="submit-task-div">
+          <form id="submit-form">
+            <div id="form-div">
+              <label for="input-name" id="label-task">Name : </label>
+              <input id="input-name" class="input-task" required />
+            </div>
+            <div id="form-div">
+              <label for="input-description" id="label-task"
+                >Description :
+              </label>
+              <input id="input-description" class="input-task" required />
+            </div>
+            <div id="form-div">
+              <label for="input-priority" id="label-task">Priority : </label>
+              <select id="input-priority" class="input-task" required>
+                <option>Low</option>
+                <option>Normal</option>
+                <option>High</option>
+              </select>
+            </div>
+            <div id="form-div">
+              <label for="input-date" id="label-task">Date : </label>
+              <input
+                id="input-date"
+                type="datetime-local"
+                class="input-task"
+                required
+              />
+            </div>
+            <div id="form-div">
+              <label for="input-project" id="label-task">Project : </label>
+              <select
+                id="input-project"
+                type="search"
+                class="input-task"
+                required
+              ></select>
+            </div>
+          </form>
+          <div id="add-task-buttons">
+            <button id="add-task-button-add">Add</button>
+            <button id="add-task-button-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
+
+<svg></svg>

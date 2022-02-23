@@ -1,0 +1,308 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3ffd3;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(102 220 107);
+    padding: 1rem 2rem;
+}
+main {
+    display: flex;
+    padding: 0 2rem;
+}
+button {
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar */
+#nav {
+    padding: 0rem;
+}
+.nav-button {
+    display: block;
+    border: 0;
+    width: 15rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-button#text{
+    padding-right: 2rem;
+}
+#add-project-button {
+    display: block;
+    border: 0;
+    width: 15rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 8%;
+    font-size: 16px;
+
+}
+
+#project-delete {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+    position: relative;
+    left: 80px;
+
+}
+#add-project-button:hover {
+    background-color: rgb(165 255 165);
+}
+.nav-button:hover {
+    background-color: rgb(165 255 165);
+}
+.active-button {
+    background-color: rgb(165 255 165);
+}
+#submit-project-div {
+    display: none;
+}
+#input-project-field {
+    width: 97%;
+    height: 1.5rem;
+    margin-top: 8%;
+}
+#add-project-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    
+}
+#add-project-button-add {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: #40ff2f;
+}
+#add-project-button-cancel {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: red;
+}
+#add-project-button-add:hover {
+    background-color:#40ff2f8c;
+    
+}
+#add-project-button-cancel:hover {
+    background-color: #ff00008c;
+}
+/* project preview */
+#project-preview {
+    padding: 0 20%;
+    flex-grow: 1;
+}
+
+/* edit task input */
+#edit-task-form {
+    height: 35rem;
+    width: 50rem;
+    background-color: rgb(142, 255, 147);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -17.5rem 0 0 -25rem;
+    border-radius: 10px;
+    display: none;
+}
+#edit-submit-form{  
+    opacity: 1;
+    display: block;
+    padding: 15% 25%;
+    font-size: 20px;
+
+}
+
+
+.edit-input-task {
+    height: 1.5rem;
+    font-size: 14px;
+    margin-top: 2%;
+    }
+#edit-label-task {
+    display: flex;
+    align-self: center;
+    padding-right: 10px;
+    width: 150px;
+    margin-top: 2%;
+}
+#edit-task-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    margin-top: 2rem;
+    font-size: 24px;
+
+    
+}
+#edit-task-button-submit {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: #00ff37;
+    font-size: 18px;
+
+
+}
+#edit-task-button-cancel {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: red;
+    font-size: 18px;
+
+}
+
+/* add task */
+#add-task-button {
+    display: block;
+    border: 0;
+    width: 31rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 5%;
+    font-size: 16px;
+
+}
+
+#add-task-button:hover {
+    background-color: rgb(165 255 165);
+    
+}
+#submit-task-div {
+    display: none;
+}
+#submit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.input-task {
+    height: 1.5rem;
+    font-size: 14px;
+
+}
+#label-task {
+    display: flex;
+    align-self: center;
+    padding-right: 10px;
+    width: 100px;
+}
+#form-div {
+    display: flex;
+    margin: 5px 0px;
+}
+#add-task-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 0.5rem;
+
+    
+}
+#add-task-button-add {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: #40ff2f;
+
+}
+#add-task-button-cancel {
+    height: 2.5rem;
+    width: 100%;
+    border: 0;
+    background-color: red;
+}
+#add-task-button-add:hover {
+    background-color:#40ff2f8c;
+    
+}
+#add-task-button-cancel:hover {
+    background-color: #ff00008c;
+}
+
+/* task */
+.task-div {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    flex-wrap: wrap;
+    width: 30rem
+
+}; 
+
+.task-div:hover {
+    background-color: rgb(165 255 165);
+}
+
+
+
+#task-complete {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 16px;
+    opacity: 0.5;
+}
+#task-priority {
+    margin: auto;
+}
+#task-date {
+    margin-right: 5%;
+}
+#task-delete {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+
+}
+
+/* hidden task details */
+
+#task-details {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#task-description {
+    width: 100%;
+margin-left: 64px;
+
+}
+#task-edit {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+    margin: auto 0;
+}
+#task-project {
+margin-right: auto;
+margin-left: 64px;
+margin-bottom: 21px;
+}
+
+
